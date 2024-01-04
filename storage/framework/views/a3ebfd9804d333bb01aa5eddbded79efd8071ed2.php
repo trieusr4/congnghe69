@@ -13,9 +13,19 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-                <div class="box-header">
-                    <h3 class="box-title"><a href="<?php echo e(route('admin.attribute.create')); ?>" class="btn btn-primary">Thêm mới <i class="fa fa-plus"></i></a></h3>
-               </div>
+                <div class="box-title">
+                    <form class="form-inline">
+                        <select name="type" class="form-control" >
+                            <option value="0">Loại</option>
+                            <?php $__currentLoopData = $types; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <option value="<?php echo e($item->id); ?>" <?php echo e(Request::get('category') == $item->id ? "selected='selected'" : ""); ?>><?php echo e($item->t_name); ?></option>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </select>
+
+                        <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <a href="<?php echo e(route('admin.attribute.create')); ?>" class="btn btn-primary">Thêm mới <i class="fa fa-plus"></i></a>
+                    </form>
+                </div>
                 <div class="box-body">
                    <div class="col-md-12">
                         <table class="table">

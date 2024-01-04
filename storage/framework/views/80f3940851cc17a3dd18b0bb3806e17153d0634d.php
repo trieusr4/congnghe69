@@ -64,38 +64,27 @@
                                 </p>
                             </div>
                             <?php if($product->attributes->count() > 0): ?>
-                                <div>
-                                    <div style="margin-bottom: 10px">
-                                        <div style="float: left; width: 30%; line-height: 36px;">
-                                            Chọn Size :
-                                        </div>
+                                <?php $__currentLoopData = $types; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $type): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <?php if(checkHas($type->id, $product->attributes) && $type->t_is_multi_choice): ?>
                                         <div>
-                                            <select name="size" id="product-size" class="form-control">
-                                                <option value="">Chọn size</option>
-                                                <?php $__currentLoopData = $product->attributes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                    <?php if($attribute->atb_type_id == 1): ?>
-                                                        <option value="<?php echo e($attribute->atb_name); ?>" ><?php echo e($attribute->atb_name); ?></option>
-                                                    <?php endif; ?>
-                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                            </select>
+                                            <div style="margin-bottom: 10px">
+                                                <div style="float: left; width: 30%; line-height: 36px;">
+                                                    Chọn <?php echo e($type->t_name); ?> :
+                                                </div>
+                                                <div>
+                                                    <select name="size" id="product-size" class="form-control">
+                                                        <option value="">Chọn <?php echo e($type->t_name); ?></option>
+                                                        <?php $__currentLoopData = $product->attributes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                            <?php if($attribute->atb_type_id == $type->id): ?>
+                                                                <option value="<?php echo e($attribute->atb_name); ?>" ><?php echo e($attribute->atb_name); ?></option>
+                                                            <?php endif; ?>
+                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div style="float: left; width: 30%; line-height: 36px;">
-                                            Chọn Màu :
-                                        </div>
-                                        <div>
-                                            <select name="color" id="product-color" class="form-control">
-                                                <option value="">Chọn màu</option>
-                                                <?php $__currentLoopData = $product->attributes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                    <?php if($attribute->atb_type_id == 2): ?>
-                                                        <option value="<?php echo e($attribute->atb_name); ?>" ><?php echo e($attribute->atb_name); ?></option>
-                                                    <?php endif; ?>
-                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <?php endif; ?>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             <?php endif; ?>
 
                             <!-- <div>
@@ -109,17 +98,17 @@
                             </div> -->
                             <div style="clear: both;"></div>
                             <div class="btn-cart" style="margin-top: 10px;">
-                                <?php if($product->pro_number > 0 ): ?>
+                                <?php if($product->pro_number > 0 && $product->pro_active ): ?>
                                     <a href="<?php echo e(route('get.shopping.add', $product->id)); ?>" title=""
                                     class="muangay" id="buy-now-btn">
                                         <span>Mua ngay</span>
-                                        <span>Hotline: 0559518488</span>
+                                        <span>Hotline: 0961080094</span>
                                     </a>
                                 <?php else: ?>
                                     <a title=""
                                     style="background-color: #fe0000;color: #fff" id="buy-now-btn">
                                         <span>Hết hàng</span>
-                                        <span>Hotline: 0559518488</span>
+                                        <span>Hotline: 0961080094</span>
                                     </a>
                                 <?php endif; ?>
                                 <a href="<?php echo e(route('ajax_get.user.add_favourite', $product->id)); ?>"

@@ -103,13 +103,13 @@
                                     <a href="{{ route('get.shopping.add', $product->id) }}" title=""
                                     class="muangay" id="buy-now-btn">
                                         <span>Mua ngay</span>
-                                        <span>Hotline: 0559518488</span>
+                                        <span>Hotline: 0961080094</span>
                                     </a>
                                 @else
                                     <a title=""
                                     style="background-color: #fe0000;color: #fff" id="buy-now-btn">
                                         <span>Hết hàng</span>
-                                        <span>Hotline: 0559518488</span>
+                                        <span>Hotline: 0961080094</span>
                                     </a>
                                 @endif
                                 <a href="{{ route('ajax_get.user.add_favourite', $product->id) }}"

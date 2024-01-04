@@ -161,7 +161,7 @@
                 <div class="pull-right hidden-xs">
                     <b>Version</b> 2.4.0
                 </div>
-                <strong>Copyright &copy; 2023 <a href="https://adminlte.io">Hapi2hand</a>.</strong> All rights
+                <strong>Copyright &copy; 2023 <a href="https://adminlte.io">Công nghệ 69</a>.</strong> All rights
                 reserved.
             </footer>
             <!-- Control Sidebar -->

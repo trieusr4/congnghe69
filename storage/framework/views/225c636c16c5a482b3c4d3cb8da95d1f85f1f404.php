@@ -13,7 +13,7 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-               <div class="box-title">
+                <div class="box-title">
                     <form class="form-inline">
                         <input type="text" class="form-control" value="<?php echo e(Request::get('id')); ?>" name="id" placeholder="ID">
                         <input type="text" class="form-control" value="<?php echo e(Request::get('name')); ?>" name="name" placeholder="Name ...">
@@ -22,6 +22,14 @@
                             <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <option value="<?php echo e($item->id); ?>" <?php echo e(Request::get('category') == $item->id ? "selected='selected'" : ""); ?>><?php echo e($item->c_name); ?></option>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </select>
+                        <select name="sort" class="form-control">
+                            <option value="desc" <?php echo e(Request::get('sort') == "desc" ? "selected='selected'" : ""); ?>>Mới nhất</option>
+                            <option value="asc" <?php echo e(Request::get('sort') == "asc" ? "selected='selected'" : ""); ?>>Cũ nhất</option>
+                            <option value="price_desc" <?php echo e(Request::get('sort') == "price_desc" ? "selected='selected'" : ""); ?>>Giá cao đến thấp</option>
+                            <option value="price_asc" <?php echo e(Request::get('sort') == "price_asc" ? "selected='selected'" : ""); ?>>Giá thấp đến cao</option>
+                            <option value="quantity_asc" <?php echo e(Request::get('sort') == "quantity_asc" ? "selected='selected'" : ""); ?>>Số lượng thấp đến cao</option>
+                            <option value="quantity_desc" <?php echo e(Request::get('sort') == "quantity_desc" ? "selected='selected'" : ""); ?>>Số lượng cao đến thấp</option>
                         </select>
 
                         <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Tìm kiếm</button>

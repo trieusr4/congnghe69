@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title><?php echo e(strtolower($title_page ?? "Đồ công nghệ 69")); ?></title>
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-        <link rel="icon" sizes="32x32" type="image/png" href="<?php echo e(asset('images/logo.png')); ?>" />
+        <link rel="icon" sizes="32x32" type="image/png" href="<?php echo e(asset('images/logo_doconghe.png')); ?>" />
         <?php echo $__env->yieldContent('css'); ?>
 
         

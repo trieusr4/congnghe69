@@ -106,6 +106,7 @@
                             <label class="control-label"><?php echo e($attribute['t_name']); ?></label>
                             <?php if(!$attribute['t_is_multi_choice']): ?>
                                 <select name="attribute[]" class="form-control ">
+                                    <option value="0" <?php echo e(in_array($item['id'], $attributeOld ) ? "checked"  : ''); ?>>Chọn</option>
                                     <?php $__currentLoopData = $attribute['attributes']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                         <option value="<?php echo e($item['id']); ?>" <?php echo e(in_array($item['id'], $attributeOld ) ? "checked"  : ''); ?>>
                                             <?php echo e($item['atb_name']); ?>

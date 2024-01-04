@@ -42,6 +42,6 @@
     <div style="background: #f4f5f5;box-sizing: border-box;padding: 15px" class="text-center">
         <p>Nếu có vấn đề cần giải quyết vui lòng liên hệ chúng tôi qua thông tin bên dưới</p>
         <p style="margin:2px 0;color: #333">Email : admin.hapi2hand@gmail.com</p>
-        <p style="margin:2px 0;color: #333">Phone : 0559518488</p>
+        <p style="margin:2px 0;color: #333">Phone : 0961080094</p>
     </div>
 </div><?php /**PATH D:\ADMIN\web_ban_giay_L9\web_ban_giay_Hapi2hand_Finally\resources\views/emails/email_success_transaction.blade.php ENDPATH**/ ?>

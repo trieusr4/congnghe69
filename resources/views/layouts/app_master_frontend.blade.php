@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>{{ strtolower($title_page ?? "Đồ công nghệ 69")   }}</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="icon" sizes="32x32" type="image/png" href="{{ asset('images/logo.png') }}" />
+        <link rel="icon" sizes="32x32" type="image/png" href="{{ asset('images/logo_doconghe.png') }}" />
         @yield('css')
 
         {{-- Thông báo --}}
