@@ -138,7 +138,7 @@
                         </div>
                         <div class="ads">
                             <a href="#" title="Giam giá" target="_blank"><img alt="Hoan tien" style="width: 100%"
-                                                                              src="<?php echo e(url('images/banner/banner_01.jpg')); ?>"></a>
+                                                                              src="<?php echo e(url('images/banner/banner.jpg')); ?>"></a>
                         </div>
                     </div>
                 </div>
