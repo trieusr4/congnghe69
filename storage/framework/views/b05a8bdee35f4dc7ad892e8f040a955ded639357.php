@@ -36,12 +36,12 @@
         </div>
         <div class="text-center">
             <p>Đây là email tự động, vui lòng không trả lời vào email này</p>
-            <p>Chúc bạn có trải nghiệm hài lòng cùng với Hapi2hand!</p>
+            <p>Chúc bạn có trải nghiệm hài lòng cùng với đồ công nghệ 69!</p>
         </div>
     </div>
     <div style="background: #f4f5f5;box-sizing: border-box;padding: 15px" class="text-center">
         <p>Nếu có vấn đề cần giải quyết vui lòng liên hệ chúng tôi qua thông tin bên dưới</p>
-        <p style="margin:2px 0;color: #333">Email : admin.hapi2hand@gmail.com</p>
+        <p style="margin:2px 0;color: #333">Email : congnghe69@gmail.com</p>
         <p style="margin:2px 0;color: #333">Phone : 0961080094</p>
     </div>
 </div><?php /**PATH C:\Users\Acer\Downloads\web-ban-hang\web-ban-hang\resources\views/emails/email_success_transaction.blade.php ENDPATH**/ ?>

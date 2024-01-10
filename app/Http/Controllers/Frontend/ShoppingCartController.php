@@ -294,9 +294,9 @@ class ShoppingCartController extends Controller
             $vnpSecureHash = hash_hmac('sha512', $hashdata ,env('VNP_HASH_SECRET'));
             $vnp_Url .= 'vnp_SecureHashType=SHA512&vnp_SecureHash=' . $vnpSecureHash;
         }
-
         return redirect($vnp_Url);
     }
+
     // lu du lieu va tra ve phan thanh toan online qua vnpay
     public function vnpayReturn(Request $request) {
         if (session()->has('info_custormer') && $request->vnp_ResponseCode == '00') {
@@ -310,7 +310,7 @@ class ShoppingCartController extends Controller
                 if ($transactionID) {
                     $shopping = \Cart::content();
                     //Mail::to($request->tst_email)->send(new TransactionSuccess($shopping));
-
+                    Mail::to($request->session()->get('info_custormer')['tst_email'])->send(new TransactionSuccess($shopping));
                     foreach ($shopping as $key => $item) {
 
                         // Lưu chi tiết đơn hàng
@@ -356,7 +356,7 @@ class ShoppingCartController extends Controller
                         'p_transaction_id' => $transactionID,
                         'p_transaction_code' => $vnpayData['vnp_TxnRef'],
                         'p_user_id' => $data['tst_user_id'],
-                        'p_money' => $data['tst_total_money'],
+                        'p_money' => (integer)$data['tst_total_money'],
                         'p_note' => $vnpayData['vnp_OrderInfo'],
                         'p_vnp_response_code' => $vnpayData['vnp_ResponseCode'],
                         'p_code_vnpay' => $vnpayData['vnp_TransactionNo'],

@@ -607,7 +607,7 @@
                                                                         <strong>Xin trân trọng cảm ơn.</strong></p>
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:26px;color:#000000;font-size:17px">
-                                                                        <strong><em>Hapi2hand!</em></strong></p>
+                                                                        <strong><em>Đồ công nghệ 69!</em></strong></p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -714,11 +714,9 @@
                                                                     style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:18px;color:#000000;font-size:12px">
-                                                                        Địa chỉ: Số nhà 55,&nbsp; Ngõ 210, Tòa Hapi2hand<br></p>
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:18px;color:#000000;font-size:12px">
-                                                                        Đường Hoàng Quán Chi, Phường Yên Hòa, Quận Cầu
-                                                                        Giấy, TP. Hà Nội, Việt Nam.</p>
+                                                                        Địa chỉ: Số 1, Trịnh Văn Bô, Hà Nội<br></p>
+                                    
+                                                                       
                                                                 </td>
                                                             </tr>
                                                         </table>

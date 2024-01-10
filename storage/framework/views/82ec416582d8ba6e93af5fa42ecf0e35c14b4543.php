@@ -111,7 +111,7 @@
                             <div class="btn-cart" style="margin-top: 10px;">
                                 <a href="<?php echo e(route('get.shopping.add', $product->id)); ?>" title=""
                                    class="muangay" id="buy-now-btn">
-                                    <span>Mua ngay</span>
+                                    <span>Thêm vào giỏ hàng</span>
                                     <span>Hotline: 0961080094</span>
                                 </a>
                                 <a href="<?php echo e(route('ajax_get.user.add_favourite', $product->id)); ?>"
