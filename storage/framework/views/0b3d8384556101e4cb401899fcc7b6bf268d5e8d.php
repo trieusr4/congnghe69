@@ -9,4 +9,4 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
 </div>
-<?php /**PATH D:\HOC\PHP\xampp\htdocs\Hapi2hand_Finally\resources\views/frontend/pages/home/include/_inc_slide.blade.php ENDPATH**/ ?>
+<?php ?>
