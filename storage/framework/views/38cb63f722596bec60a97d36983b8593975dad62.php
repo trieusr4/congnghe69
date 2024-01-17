@@ -32,7 +32,8 @@
                     <th scope="col">Name</th>
                     <th scope="col">Total</th>
                     <th scope="col">Time</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Statusa</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,6 +64,11 @@
                             <?php echo e($transaction->getStatus($transaction->tst_status)['name']); ?>
 
                         </span>
+                    </th>
+                    <th>
+                        <?php if($transaction->tst_status === 1): ?>
+                            <a class="btn btn-xs btn-info label-danger" href="<?php echo e(route('cancel.user.transaction',$transaction->id)); ?>">Hủy đơn</a>
+                        <?php endif; ?>
                     </th>
                 </tr>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

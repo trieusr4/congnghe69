@@ -10,6 +10,7 @@
         Route::post('change-password','UserInfoController@saveChangePassword')->name('get.user.savePassword');
 
         Route::get('transaction','UserTransactionController@index')->name('get.user.transaction');
+        Route::get('transaction/{id}','UserTransactionController@cancel')->name('cancel.user.transaction');
         Route::get('order/view/{id}','UserTransactionController@viewOrder')->name('get.user.order');
 
         Route::get('rating','UserRatingController@index')->name('get.user.rating');

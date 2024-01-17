@@ -85,4 +85,14 @@ class UserTransactionController extends Controller
             ->where('od_transaction_id', $transactionID)
             ->get();
     }
+    public function cancel($id)
+    {
+        $transaction = Transaction::find($id);
+        if ($transaction) {
+            $transaction->tst_status = -1;
+            $transaction->save();
+        }
+
+        return redirect()->back();
+    }
 }
